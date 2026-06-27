@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    overflow:hidden;
+}
+
+/* Main Card */
+
+.container{
+    width:420px;
+    background:#1f1f1f;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 0 40px rgba(0,0,0,.5);
+    animation:fadeIn .5s ease;
+}
+
+h1{
+    color:#ff4d6d;
+    margin-bottom:15px;
+    font-size:32px;
+}
+
+p{
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:25px;
+}
+
+/* Buttons */
+
+button{
+    padding:12px 28px;
+    border:none;
+    border-radius:12px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.25s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+#mainButton{
+    background:#4CAF50;
+    color:white;
+}
+
+/* Yes Button */
+
+.yes{
+    background:#4CAF50;
+    color:white;
+    transition:0.3s ease;
+}
+
+.yes:hover{
+    transform:scale(1.2);
+    box-shadow:0 0 25px #4CAF50;
+}
+
+/* No Button */
+
+#noButton{
+    background:#F44336;
+    color:white;
+    margin-left:15px;
+}
+
+/* Final Screen */
+
+.success{
+    color:#ff4d6d;
+    font-size:45px;
+}
+
+.success-text{
+    font-size:22px;
+    margin-top:15px;
+}
+
+/* Fade Animation */
+
+@keyframes popIn{
+    0%{
+        opacity:0;
+        transform:scale(0.5);
+    }
+
+    70%{
+        transform:scale(1.08);
+    }
+
+    100%{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+.container{
+    animation:popIn .6s ease;
+}
